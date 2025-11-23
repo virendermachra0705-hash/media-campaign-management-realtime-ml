@@ -1,0 +1,77 @@
+{
+  "id": null,
+  "uid": "media-campaign-dashboard",
+  "title": "Media Campaign Overview",
+  "tags": ["media", "mlops", "campaign"],
+  "timezone": "browser",
+  "schemaVersion": 32,
+  "version": 1,
+  "editable": true,
+  "refresh": "10s",
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "panels": [
+    {
+      "id": 1,
+      "type": "timeseries",
+      "title": "API predictions_total",
+      "targets": [
+        {
+          "expr": "predictions_total",
+          "refId": "A"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 }
+    },
+    {
+      "id": 2,
+      "type": "timeseries",
+      "title": "Consumer predictions_total",
+      "targets": [
+        {
+          "expr": "consumer_predictions_total",
+          "refId": "A"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 }
+    },
+    {
+      "id": 3,
+      "type": "stat",
+      "title": "Consumer Last Prediction ROAS",
+      "targets": [
+        {
+          "expr": "consumer_last_prediction",
+          "refId": "A"
+        }
+      ],
+      "gridPos": { "h": 5, "w": 6, "x": 0, "y": 8 }
+    },
+    {
+      "id": 4,
+      "type": "graph",
+      "title": "Predicted ROAS Distribution",
+      "targets": [
+        {
+          "expr": "consumer_predicted_roas",
+          "refId": "A"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 18, "x": 6, "y": 8 }
+    },
+    {
+      "id": 5,
+      "type": "stat",
+      "title": "Active Model",
+      "targets": [
+        {
+          "expr": "active_model",
+          "refId": "A"
+        }
+      ],
+      "gridPos": { "h": 5, "w": 6, "x": 0, "y": 13 }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+# Core Python libraries
+numpy==1.26.4
+pandas==2.1.4
+scikit-learn==1.3.2
+joblib==1.3.2
+
+# ML Models
+xgboost==1.7.6
+lightgbm==4.1.0
+
+# FastAPI + Web Server
+fastapi==0.110.0
+uvicorn==0.27.0
+
+# Kafka Client
+kafka-python==2.0.2
+
+# Monitoring / Drift Detection
+scipy==1.11.4
+
+# For async tasks / RT data processing
+pydantic==2.5.3
+
+# Optional (but recommended for API CORS)
+python-multipart==0.0.6
+
+# Visualization (if needed for notebooks)
+matplotlib==3.8.2
+
+# Notebook support
+jupyter==1.0.0
+notebook==7.0.6
+
+# Logging
+rich==13.7.0
+
+prometheus-client==0.16.0
+confluent-kafka==2.2.0
+fastapi
+uvicorn[standard]
+joblib
+pandas
+scikit-learn
+confluent-kafka
+prometheus-client
+python-dotenv
